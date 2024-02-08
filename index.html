@@ -48,7 +48,7 @@
 
 	let quotesArray = [
 	'NAPS is by far the most significant cultural force of the decade. — New York Times',
-'These days sleeping at your desk is not just acceptable, its encouraged. — The Atlantic',
+'These days sleeping at your desk is not just acceptable, it encouraged. — The Atlantic',
 'NAPS has changed the way people think about sleep, on a grand scale. — Washington Post',
 'Happiness increased 200% since NAPS began promoting siestas. — National Science Review',
 'NAPS has ushered in a new era of sleep. — USA Today',
@@ -57,10 +57,10 @@
 	]
 
 
-	let randomNumber = Math.floor(Math.random()*7) //generates a random integer between 0-6
+	let randomNumber = Math.floor(Math.random()*quotesArray.length) //generates a random integer between 0-6
 
 
-	Document.getElementById('press=quote').textcontent = quotesArray[randomNumber];
+	document.getElementById('press=quote').textcontent = '“ ' + quotesArray[randomNumber].split('—')[0] + '“ —' + quotesArray[randomNumber].split('—')[1];
 
 </script>
 </body>
